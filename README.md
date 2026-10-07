@@ -1,16 +1,23 @@
-# React + Vite
+# Painel de Ideias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi feito em React com Vite e serve para adicionar ideias, marcar como concluídas e remover quando não forem mais necessárias.
 
-Currently, two official plugins are available:
+Também possui validação para não adicionar ideias vazias e um contador que mostra quantas ideias existem e quantas já foram concluídas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Como rodar
 
-## React Compiler
+Instale as dependências:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+npm install
 
-## Expanding the ESLint configuration
+Depois rode:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm run dev
+
+## Decisões do projeto
+
+Usei useState para guardar as ideias, o texto digitado e a mensagem de erro.
+
+As ideias são mostradas usando map, removidas usando filter e o contador é calculado diretamente pela lista de ideias.
+
+O projeto foi feito somente com React e CSS puro.
